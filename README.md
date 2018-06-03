@@ -1,2 +1,2 @@
-# bashtest
-Description: This code will run ifconfig and show the IP an instant read form.
+ # bashtest
+Description: This code will run ifconfig and show the IP an instant to read form as well as show the Established connections on a machine via netstat and show the used percentage of your home partition.Description: This code will run ifconfig and show the IP an instant read form.
