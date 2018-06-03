@@ -12,5 +12,4 @@
 /bin/df -h | /bin/grep home | /usr/bin/awk '{print $5}' \
  | /bin/sed -e "s/^/Your Home partition is /" -e "s/$/ full/"
 
-/bin/df -h | /bin/grep home | /usr/bin/awk '{print $5}' \
- | /bin/sed -e "s/^/Your Home partition is /" -e "s/$/ full/"
+/bin/netstat -ant | /bin/grep "ESTAB"
