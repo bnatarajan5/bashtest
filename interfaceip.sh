@@ -6,3 +6,6 @@
 /sbin/ifconfig | /bin/grep -B 1 "inet addr:" | /bin/sed ':a;N;$!ba;s/\n//g' \
 | /bin/sed "s/--/\n/g" | /bin/egrep -o "^\w+.*inet\saddr:\w+\.\w+\.\w+\.\w+" \
 | /bin/sed "s/Link.*inet addr:/ interface has the IP = /g" | sed "s/  //g"
+
+/bin/df -h | /bin/grep home | /usr/bin/awk '{print $5}' \
+ | /bin/sed -e "s/^/Your Home partition is /" -e "s/$/ full/"
